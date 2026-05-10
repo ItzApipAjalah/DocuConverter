@@ -16,7 +16,7 @@
   - **Split PDF**: Separate pages into individual files.
   - **Remove Pages**: Visually select and delete specific pages.
   - **Extract Pages**: Choose specific pages to create a new PDF.
-- **Image to PDF Pro**:
+- **Image to PDF**:
   - Convert multiple JPG/PNG images.
   - **Visual Reordering**: Drag and drop or use arrows to set page order.
   - **Live Preview**: See how your PDF will look (Orientation, Page Size, Margin) before processing.
@@ -62,7 +62,7 @@
   - **Split PDF**: Memisahkan setiap halaman menjadi file individu.
   - **Remove Pages**: Pilih secara visual dan hapus halaman tertentu.
   - **Extract Pages**: Pilih halaman tertentu untuk membuat PDF baru.
-- **Image to PDF Pro**:
+- **Image to PDF**:
   - Konversi banyak gambar JPG/PNG sekaligus.
   - **Visual Reordering**: Tarik dan lepas (Drag & drop) untuk mengatur urutan halaman.
   - **Live Preview**: Lihat tampilan PDF Anda (Orientasi, Ukuran Halaman, Margin) secara langsung sebelum diproses.
