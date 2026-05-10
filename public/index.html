@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocuConvert - Free Online Document Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <header>
+        <div class="header-content">
+            <div class="logo" id="home-link">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <span>DocuConvert</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" id="nav-home" class="active">Home</a></li>
+                    <li><a href="/docs">API Docs</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="header-actions">
+                <a href="https://github.com" target="_blank" class="btn-icon"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Dashboard View -->
+        <div id="dashboard-view">
+            <div class="hero">
+                <h1>Every tool you need to work with <span class="highlight">Documents</span></h1>
+                <p>100% Free and Secure online converter. Convert between PDF, Word, Excel, PowerPoint, and Jupyter
+                    Notebooks easily.</p>
+            </div>
+
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All Tools</button>
+                <button class="filter-btn" data-filter="convert-to-pdf">Convert to PDF</button>
+                <button class="filter-btn" data-filter="convert-from-pdf">Convert from PDF</button>
+                <button class="filter-btn" data-filter="organize-pdf">Organize PDF</button>
+            </div>
+
+            <div class="tools-grid">
+                <!-- IPYNB to PDF -->
+                <div class="tool-card" data-tool="ipynb-to-pdf" data-accept=".ipynb" data-category="convert-to-pdf">
+                    <div class="tool-icon" style="color: #f37626; background: rgba(243,118,38,0.1);"><i
+                            class="fa-brands fa-python"></i></div>
+                    <h3>IPYNB to PDF</h3>
+                    <p>Convert Jupyter Notebooks to PDF format.</p>
+                </div>
+                <!-- Word to PDF -->
+                <div class="tool-card" data-tool="word-to-pdf" data-accept=".doc,.docx" data-category="convert-to-pdf">
+                    <div class="tool-icon" style="color: #2b579a; background: rgba(43,87,154,0.1);"><i
+                            class="fa-solid fa-file-word"></i></div>
+                    <h3>Word to PDF</h3>
+                    <p>Make DOC and DOCX files easy to read by converting to PDF.</p>
+                </div>
+                <!-- Excel to PDF -->
+                <div class="tool-card" data-tool="excel-to-pdf" data-accept=".xls,.xlsx" data-category="convert-to-pdf">
+                    <div class="tool-icon" style="color: #217346; background: rgba(33,115,70,0.1);"><i
+                            class="fa-solid fa-file-excel"></i></div>
+                    <h3>Excel to PDF</h3>
+                    <p>Convert your spreadsheets to PDF documents.</p>
+                </div>
+                <!-- PPT to PDF -->
+                <div class="tool-card" data-tool="ppt-to-pdf" data-accept=".ppt,.pptx" data-category="convert-to-pdf">
+                    <div class="tool-icon" style="color: #b7472a; background: rgba(183,71,42,0.1);"><i
+                            class="fa-solid fa-file-powerpoint"></i></div>
+                    <h3>PPT to PDF</h3>
+                    <p>Turn your PowerPoint presentations into PDFs.</p>
+                </div>
+                <!-- Image to PDF -->
+                <div class="tool-card" data-tool="image-to-pdf" data-accept=".jpg,.jpeg,.png" data-category="convert-to-pdf">
+                    <div class="tool-icon" style="color: #f37626; background: rgba(243,118,38,0.1);"><i
+                            class="fa-solid fa-image"></i></div>
+                    <h3>Image to PDF</h3>
+                    <p>Convert JPG, PNG images to PDF easily.</p>
+                </div>
+                <!-- PDF to Word -->
+                <div class="tool-card" data-tool="pdf-to-word" data-accept=".pdf" data-category="convert-from-pdf">
+                    <div class="tool-icon" style="color: #e2574c; background: rgba(226,87,76,0.1);"><i
+                            class="fa-solid fa-file-pdf"></i><i class="fa-solid fa-arrow-right-arrow-left"
+                            style="font-size: 0.8rem; margin:0 5px;"></i><i class="fa-solid fa-file-word"
+                            style="color: #2b579a;"></i></div>
+                    <h3>PDF to Word</h3>
+                    <p>Convert PDFs to editable Word documents.</p>
+                </div>
+                <!-- PDF to Excel -->
+                <div class="tool-card" data-tool="pdf-to-excel" data-accept=".pdf" data-category="convert-from-pdf">
+                    <div class="tool-icon" style="color: #e2574c; background: rgba(226,87,76,0.1);"><i
+                            class="fa-solid fa-file-pdf"></i><i class="fa-solid fa-arrow-right-arrow-left"
+                            style="font-size: 0.8rem; margin:0 5px;"></i><i class="fa-solid fa-file-excel"
+                            style="color: #217346;"></i></div>
+                    <h3>PDF to Excel</h3>
+                    <p>Extract data from PDF straight to Excel spreadsheets.</p>
+                </div>
+                <!-- PDF to PPT -->
+                <div class="tool-card" data-tool="pdf-to-ppt" data-accept=".pdf" data-category="convert-from-pdf">
+                    <div class="tool-icon" style="color: #e2574c; background: rgba(226,87,76,0.1);"><i
+                            class="fa-solid fa-file-pdf"></i><i class="fa-solid fa-arrow-right-arrow-left"
+                            style="font-size: 0.8rem; margin:0 5px;"></i><i class="fa-solid fa-file-powerpoint"
+                            style="color: #b7472a;"></i></div>
+                    <h3>PDF to PPT</h3>
+                    <p>Turn your PDF files into editable PowerPoint slides.</p>
+                </div>
+                <!-- Merge PDF -->
+                <div class="tool-card" data-tool="merge-pdf" data-accept=".pdf" data-category="organize-pdf">
+                    <div class="tool-icon" style="color: #5a54db; background: rgba(90,84,219,0.1);"><i
+                            class="fa-solid fa-object-group"></i></div>
+                    <h3>Merge PDF</h3>
+                    <p>Combine multiple PDFs into one unified document.</p>
+                </div>
+                <!-- Split PDF -->
+                <div class="tool-card" data-tool="split-pdf" data-accept=".pdf" data-category="organize-pdf">
+                    <div class="tool-icon" style="color: #5a54db; background: rgba(90,84,219,0.1);"><i
+                            class="fa-solid fa-scissors"></i></div>
+                    <h3>Split PDF</h3>
+                    <p>Extract every page of a PDF into separate files.</p>
+                </div>
+                <!-- Remove Pages -->
+                <div class="tool-card" data-tool="remove-pages" data-accept=".pdf" data-category="organize-pdf">
+                    <div class="tool-icon" style="color: #e2574c; background: rgba(226,87,76,0.1);"><i
+                            class="fa-solid fa-file-circle-minus"></i></div>
+                    <h3>Remove Pages</h3>
+                    <p>Remove specific pages from your PDF document.</p>
+                </div>
+                <!-- Extract Pages -->
+                <div class="tool-card" data-tool="extract-pages" data-accept=".pdf" data-category="organize-pdf">
+                    <div class="tool-icon" style="color: #217346; background: rgba(33,115,70,0.1);"><i
+                            class="fa-solid fa-file-export"></i></div>
+                    <h3>Extract Pages</h3>
+                    <p>Extract only the pages you need into a new PDF.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Upload View (Hidden by default) -->
+        <div id="upload-view" class="hidden">
+            <div class="hero">
+                <h1 id="tool-title">Convert Document</h1>
+                <p id="tool-description">Select your file to begin conversion.</p>
+                <button id="back-btn" class="btn-text"><i class="fa-solid fa-arrow-left"></i> Back to Tools</button>
+            </div>
+
+            <div class="upload-container" id="upload-container">
+                <form id="upload-form" enctype="multipart/form-data">
+                    <input type="file" id="file-input" name="file" multiple hidden>
+                    <input type="hidden" id="conversion-type" name="type">
+
+                    <div class="drop-zone" id="drop-zone">
+                        <div class="drop-zone-content" id="initial-state">
+                            <div class="icon-container">
+                                <i class="fa-solid fa-cloud-arrow-up"></i>
+                            </div>
+                            <h2>Select or Drop your file</h2>
+                            <p>File will be securely processed and converted.</p>
+                            <button type="button" class="btn-primary" id="browse-btn">Select File</button>
+                        </div>
+
+                        <div class="drop-zone-content hidden" id="file-selected-state">
+                            <div class="icon-container success">
+                                <i class="fa-solid fa-file-circle-check"></i>
+                            </div>
+                            <div id="file-list-container" class="file-list-container">
+                                <!-- File items will be appended here -->
+                            </div>
+                            <div class="action-buttons">
+                                <button type="button" class="btn-secondary" id="change-file-btn">Change File</button>
+                                <button type="button" class="btn-primary pulse" id="proceed-options-btn">Continue <i
+                                        class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="drop-zone-content hidden" id="options-state">
+                            <div class="icon-container">
+                                <i class="fa-solid fa-sliders"></i>
+                            </div>
+                            <h2>Tool Options</h2>
+                            <p id="options-description">Please configure your tool.</p>
+                            <div id="image-to-pdf-options" class="hidden" style="margin-bottom: 1.5rem; text-align: left; width: 100%;">
+                                <div class="option-group" style="margin-bottom:1rem;">
+                                    <label style="display:block; margin-bottom:0.5rem; font-weight:600; font-size:0.9rem; color:var(--text-secondary);">Page Orientation</label>
+                                    <select id="img-orientation" class="options-input" style="max-width: 100%; width:100%;">
+                                        <option value="portrait">Portrait</option>
+                                        <option value="landscape">Landscape</option>
+                                    </select>
+                                </div>
+                                <div class="option-group" style="margin-bottom:1rem;">
+                                    <label style="display:block; margin-bottom:0.5rem; font-weight:600; font-size:0.9rem; color:var(--text-secondary);">Page Size</label>
+                                    <select id="img-pagesize" class="options-input" style="max-width: 100%; width:100%;">
+                                        <option value="fit">Fit (same page size as image)</option>
+                                        <option value="a4">A4</option>
+                                    </select>
+                                </div>
+                                <div class="option-group">
+                                    <label style="display:block; margin-bottom:0.5rem; font-weight:600; font-size:0.9rem; color:var(--text-secondary);">Margin</label>
+                                    <select id="img-margin" class="options-input" style="max-width: 100%; width:100%;">
+                                        <option value="none">No Margin</option>
+                                        <option value="small">Small Margin</option>
+                                        <option value="big">Big Margin</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div id="image-to-pdf-preview-container" class="hidden" style="width: 100%; margin-bottom: 1.5rem;">
+                                <label style="display:block; margin-bottom:0.5rem; font-weight:600; font-size:0.9rem; color:var(--text-secondary);">Live Preview</label>
+                                <div id="image-to-pdf-preview" class="preview-grid"></div>
+                            </div>
+
+                            <input type="text" id="options-input" class="options-input hidden"
+                                placeholder="e.g., 1, 3, 5-10">
+
+                            <div id="page-thumbnails-container" class="page-thumbnails-container hidden">
+                                <!-- Thumbnails will be generated here by pdf.js -->
+                            </div>
+
+                            <div class="action-buttons">
+                                <button type="button" class="btn-secondary" id="back-to-files-btn">Back</button>
+                                <button type="submit" class="btn-primary pulse" id="convert-btn">Process Document <i
+                                        class="fa-solid fa-check"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="drop-zone-content hidden" id="loading-state">
+                            <div class="loader">
+                                <svg viewBox="25 25 50 50">
+                                    <circle r="20" cy="50" cx="50"></circle>
+                                </svg>
+                            </div>
+                            <h2>Converting your file...</h2>
+                            <p>Please wait while we process your document.</p>
+                        </div>
+
+                        <div class="drop-zone-content hidden" id="success-state">
+                            <div class="icon-container success">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <h2>Conversion Complete!</h2>
+                            <p>Your file is ready to be downloaded.</p>
+                            <div class="action-buttons">
+                                <a id="download-btn" class="btn-primary" style="text-decoration:none;"><i
+                                        class="fa-solid fa-download"></i> Download File</a>
+                                <button type="button" class="btn-secondary" id="convert-another-btn">Convert Another
+                                    File</button>
+                            </div>
+                        </div>
+
+                        <div class="drop-zone-content hidden" id="error-state">
+                            <div class="icon-container error">
+                                <i class="fa-solid fa-circle-xmark"></i>
+                            </div>
+                            <h2>Oops! Something went wrong.</h2>
+                            <p id="error-message">Failed to convert the file.</p>
+                            <button type="button" class="btn-secondary" id="try-again-btn">Try Again</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 DocuConvert. Built with ❤️</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
