@@ -1,15 +1,15 @@
-# DocuConvert 📄✨
+# DocuConvert
 
 [English](#english) | [Bahasa Indonesia](#bahasa-indonesia)
 
 ---
 
 <a name="english"></a>
-## 🇺🇸 English Version
+## English Version
 
 **DocuConvert** is a powerful, modern, and secure multi-format document conversion suite. It provides a clean Glassmorphism interface for users and a robust RESTful API for developers.
 
-### 🌟 Key Features
+### Key Features
 - **All-in-One Converter**: Convert between PDF, Word, Excel, PowerPoint, and Jupyter Notebooks (`.ipynb`).
 - **Advanced PDF Tools**:
   - **Merge PDF**: Combine multiple PDFs into one.
@@ -23,13 +23,13 @@
 - **Modern UI/UX**: Sleek Glassmorphism design with responsive support for mobile devices.
 - **Developer API**: Fully documented REST API (OpenAPI/Swagger) for seamless integration.
 
-### 🚀 Tech Stack
+### Tech Stack
 - **Backend**: Node.js, Express 5
 - **Document Processing**: `pdf-lib`, LibreOffice (Headless), `pdf-to-excel`
 - **Frontend**: Vanilla HTML5, CSS3 (Glassmorphism), JavaScript
 - **Libraries**: `pdf.js` (for visual selection), `puppeteer` & `ipynb2html` (for notebook conversion)
 
-### 🛠️ Installation
+### Installation
 1. **Prerequisites**:
    - Install [Node.js](https://nodejs.org/)
    - Install [LibreOffice](https://www.libreoffice.org/) (Ensure it's in your system PATH or update the path in `src/services/convertService.js`).
@@ -51,11 +51,11 @@
 ---
 
 <a name="bahasa-indonesia"></a>
-## 🇮🇩 Versi Bahasa Indonesia
+## Versi Bahasa Indonesia
 
 **DocuConvert** adalah aplikasi konversi dokumen multi-format yang kuat, modern, dan aman. Menyediakan antarmuka Glassmorphism yang bersih untuk pengguna dan API RESTful yang handal untuk pengembang.
 
-### 🌟 Fitur Utama
+### Fitur Utama
 - **Konverter All-in-One**: Konversi antara PDF, Word, Excel, PowerPoint, dan Jupyter Notebooks (`.ipynb`).
 - **Alat PDF Lanjutan**:
   - **Merge PDF**: Menggabungkan beberapa PDF menjadi satu.
@@ -69,13 +69,13 @@
 - **UI/UX Modern**: Desain Glassmorphism yang elegan dengan dukungan responsif untuk perangkat seluler.
 - **API Pengembang**: Dokumentasi API REST lengkap (OpenAPI/Swagger) untuk integrasi yang mudah.
 
-### 🚀 Teknologi yang Digunakan
+### Teknologi yang Digunakan
 - **Backend**: Node.js, Express 5
 - **Pemrosesan Dokumen**: `pdf-lib`, LibreOffice (Headless), `pdf-to-excel`
 - **Frontend**: HTML5, CSS3 (Glassmorphism), JavaScript
 - **Library**: `pdf.js` (untuk pemilihan visual), `puppeteer` & `ipynb2html` (untuk konversi notebook)
 
-### 🛠️ Instalasi
+### Instalasi
 1. **Prasyarat**:
    - Instal [Node.js](https://nodejs.org/)
    - Instal [LibreOffice](https://www.libreoffice.org/) (Pastikan ada di PATH sistem atau perbarui jalur di `src/services/convertService.js`).
@@ -96,5 +96,5 @@
 
 ---
 
-### 📝 License
-Built with ❤️ by [AMWP](https://github.com/ItzApipAjalah). Distributed under the MIT License.
+### License
+Built with love by [AMWP](https://github.com/ItzApipAjalah). Distributed under the MIT License.
