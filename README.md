@@ -1,100 +1,39 @@
-# DocuConvert
+# DocuConvert (iLovePDF Clone)
 
-[English](#english) | [Bahasa Indonesia](#bahasa-indonesia)
+Simple document converter and PDF tools built with Node.js and LibreOffice.
 
----
+## Features
+- **Convert**: Word, Excel, PPT, IPYNB to PDF.
+- **Convert From PDF**: PDF to Word, Excel, PPT.
+- **PDF Tools**: Merge, Split, Remove Pages, Extract Pages.
+- **Image to PDF**: Convert images to PDF with reordering and live preview.
 
-<a name="english"></a>
-## English Version
+## Requirements
+- Node.js
+- [LibreOffice](https://www.libreoffice.org/) (must be in system PATH)
 
-**DocuConvert** is a powerful, modern, and secure multi-format document conversion suite. It provides a clean Glassmorphism interface for users and a robust RESTful API for developers.
-
-### Key Features
-- **All-in-One Converter**: Convert between PDF, Word, Excel, PowerPoint, and Jupyter Notebooks (`.ipynb`).
-- **Advanced PDF Tools**:
-  - **Merge PDF**: Combine multiple PDFs into one.
-  - **Split PDF**: Separate pages into individual files.
-  - **Remove Pages**: Visually select and delete specific pages.
-  - **Extract Pages**: Choose specific pages to create a new PDF.
-- **Image to PDF**:
-  - Convert multiple JPG/PNG images.
-  - **Visual Reordering**: Drag and drop or use arrows to set page order.
-  - **Live Preview**: See how your PDF will look (Orientation, Page Size, Margin) before processing.
-- **Modern UI/UX**: Sleek Glassmorphism design with responsive support for mobile devices.
-- **Developer API**: Fully documented REST API (OpenAPI/Swagger) for seamless integration.
-
-### Tech Stack
-- **Backend**: Node.js, Express 5
-- **Document Processing**: `pdf-lib`, LibreOffice (Headless), `pdf-to-excel`
-- **Frontend**: Vanilla HTML5, CSS3 (Glassmorphism), JavaScript
-- **Libraries**: `pdf.js` (for visual selection), `puppeteer` & `ipynb2html` (for notebook conversion)
-
-### Installation
-1. **Prerequisites**:
-   - Install [Node.js](https://nodejs.org/)
-   - Install [LibreOffice](https://www.libreoffice.org/) (Ensure it's in your system PATH or update the path in `src/services/convertService.js`).
-2. **Clone the repo**:
-   ```bash
-   git clone https://github.com/ItzApipAjalah/DocuConverter.git
-   cd DocuConverter
-   ```
-3. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-4. **Run the server**:
-   ```bash
-   npm start
-   ```
-   Open `http://localhost:3000` in your browser.
+## How to Run
+1. `npm install`
+2. `npm start`
+3. Open `http://localhost:3000`
 
 ---
 
-<a name="bahasa-indonesia"></a>
-## Versi Bahasa Indonesia
+# DocuConvert (Clone iLovePDF)
 
-**DocuConvert** adalah aplikasi konversi dokumen multi-format yang kuat, modern, dan aman. Menyediakan antarmuka Glassmorphism yang bersih untuk pengguna dan API RESTful yang handal untuk pengembang.
+Alat konversi dokumen dan manipulasi PDF sederhana berbasis Node.js dan LibreOffice.
 
-### Fitur Utama
-- **Konverter All-in-One**: Konversi antara PDF, Word, Excel, PowerPoint, dan Jupyter Notebooks (`.ipynb`).
-- **Alat PDF Lanjutan**:
-  - **Merge PDF**: Menggabungkan beberapa PDF menjadi satu.
-  - **Split PDF**: Memisahkan setiap halaman menjadi file individu.
-  - **Remove Pages**: Pilih secara visual dan hapus halaman tertentu.
-  - **Extract Pages**: Pilih halaman tertentu untuk membuat PDF baru.
-- **Image to PDF**:
-  - Konversi banyak gambar JPG/PNG sekaligus.
-  - **Visual Reordering**: Tarik dan lepas (Drag & drop) untuk mengatur urutan halaman.
-  - **Live Preview**: Lihat tampilan PDF Anda (Orientasi, Ukuran Halaman, Margin) secara langsung sebelum diproses.
-- **UI/UX Modern**: Desain Glassmorphism yang elegan dengan dukungan responsif untuk perangkat seluler.
-- **API Pengembang**: Dokumentasi API REST lengkap (OpenAPI/Swagger) untuk integrasi yang mudah.
+## Fitur
+- **Konversi**: Word, Excel, PPT, IPYNB ke PDF.
+- **Konversi Dari PDF**: PDF ke Word, Excel, PPT.
+- **Alat PDF**: Gabung, Pisah, Hapus Halaman, Ekstrak Halaman.
+- **Gambar ke PDF**: Konversi gambar ke PDF dengan pengaturan urutan dan pratinjau langsung.
 
-### Teknologi yang Digunakan
-- **Backend**: Node.js, Express 5
-- **Pemrosesan Dokumen**: `pdf-lib`, LibreOffice (Headless), `pdf-to-excel`
-- **Frontend**: HTML5, CSS3 (Glassmorphism), JavaScript
-- **Library**: `pdf.js` (untuk pemilihan visual), `puppeteer` & `ipynb2html` (untuk konversi notebook)
+## Persyaratan
+- Node.js
+- [LibreOffice](https://www.libreoffice.org/) (harus terinstal di PATH sistem)
 
-### Instalasi
-1. **Prasyarat**:
-   - Instal [Node.js](https://nodejs.org/)
-   - Instal [LibreOffice](https://www.libreoffice.org/) (Pastikan ada di PATH sistem atau perbarui jalur di `src/services/convertService.js`).
-2. **Clone repositori**:
-   ```bash
-   git clone https://github.com/ItzApipAjalah/DocuConverter.git
-   cd DocuConverter
-   ```
-3. **Instal dependensi**:
-   ```bash
-   npm install
-   ```
-4. **Jalankan server**:
-   ```bash
-   npm start
-   ```
-   Buka `http://localhost:3000` di browser Anda.
-
----
-
-### License
-Built with love by [AMWP](https://github.com/ItzApipAjalah). Distributed under the MIT License.
+## Cara Menjalankan
+1. `npm install`
+2. `npm start`
+3. Buka `http://localhost:3000`
