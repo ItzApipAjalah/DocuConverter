@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DocuConvert API Documentation</title>
+    <!-- needed for adaptive design -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400,700" rel="stylesheet">
+
+    <!-- ReDoc doesn't change outer page styles -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      /* Custom Navbar to match the main app */
+      .custom-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 5%;
+        background: #ffffff;
+        border-bottom: 1px solid #e2e8f0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        font-family: 'Roboto', sans-serif;
+      }
+      .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #5a54db;
+        text-decoration: none;
+      }
+      .nav-links a {
+        text-decoration: none;
+        color: #4a5568;
+        font-weight: 600;
+        margin-left: 20px;
+      }
+      .nav-links a:hover {
+        color: #5a54db;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="custom-header">
+      <a href="/" class="logo">DocuConvert</a>
+      <div class="nav-links">
+        <a href="/">Back to App</a>
+      </div>
+    </header>
+
+    <redoc spec-url="openapi.yaml"></redoc>
+    
+    <script src="https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js"> </script>
+  </body>
+</html>
